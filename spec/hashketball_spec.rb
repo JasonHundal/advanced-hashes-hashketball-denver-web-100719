@@ -287,3 +287,29 @@ describe 'super bonus' do
   end
 
 end
+
+def all_players
+  game_hash_players = game_hash [:home][:players]
+  away_players = game_hash [:away][:player]
+  
+  players = home_players.concat(away_players)
+  
+  players
+end
+
+def num_points_scored plarer_name
+  number_of_points_scored = 0
+  
+  all_players.each do |player|
+    if lpayer [:player_name] == player[:player_name]
+      found_player = player_name
+    end
+   end
+  
+  number_of_points_scored
+end 
+
+
+
+
+
